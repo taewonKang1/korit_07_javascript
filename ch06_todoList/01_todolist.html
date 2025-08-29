@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List 실습</title>
+  <link rel="stylesheet" href="./01_todolist.css">
+  <script src="./01_todolist.js" defer></script>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>나의 Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="todo-input" placeholder="새로운 할 일을 추가하세요 👍">
+      <button id="add-btn">추가</button>
+    </div>
+    <ul id="todo-list" class="todo-list">
+      <!-- 버튼 눌렀을 때 <li>태그가 추가되어야 함. -->
+          <!-- 이거 분명히 html에 있는데 새로 켜보시면 없을 겁니다. 그이유는 저희가 처음 사이트에 들어가거나 혹은 새로구침을 헀을 때  renderTodos()가 호출되는데, 그때 localStorage에 있는 것들만 보여주기로 코드를 작성했으니까요. -->
+      <li class="todo-item">
+        <input type="checkbox" class="completed">
+        <span class="todo-text">todolist 만들기</span>
+        <button class="delete-btn">삭제</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
