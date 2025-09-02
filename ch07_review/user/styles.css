@@ -1,4 +1,6 @@
-h1 { text-align: center; }
+h1 {
+  text-align: center; 
+}
 
 body {
   display: flex;
@@ -12,46 +14,46 @@ body {
 input {
   max-width: 400px;
   width: 100%;
-  padding: 16px;
+  padding: 12px;
   margin: 8px 0;
   border: 1px solid gray;
+  border-radius: 2px;
   box-sizing: border-box;
 }
 
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.signup  {
-  flex: 1;
-  background-color: gray;
+.signup {
+  background-color: #2980b9;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
+  width: 100%;
+}
+
+.move {
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+  color: blue;
+}
+
+a:visited{
+  color: blue;
 }
 
 .signin {
-  flex: 1;
-  background-color: black;
+  background-color: #2980b9;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
-}
-
-.back {
-  flex: 1;
-  background-color: black;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
+  width: 100%;
 }
 
 .container {
@@ -59,6 +61,7 @@ input {
   margin: 100px auto;
   padding: 16px;
   border: 1px solid white;
+  border-radius: 10px;
   background: white;
   box-shadow: 0 1px 5px rgba(0,0,0,1);
 }

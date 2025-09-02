@@ -4,9 +4,8 @@ function getUsers() {
 }
 
 const form = document.getElementById('login-form'); 
-const uid  = document.getElementById('uname-input'); 
-const pw   = document.getElementById('psw-input');
-const signupBtn = document.querySelector('.signup');
+const uid = document.getElementById('uname-input'); 
+const pw = document.getElementById('psw-input');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -22,13 +21,6 @@ form.addEventListener('submit', (e) => {
   if (!rec) { alert('존재하지 않는 아이디입니다.'); return; }
   if (rec.password !== password) { alert('비밀번호가 올바르지 않습니다.'); return; }
 
-  // 간단 세션 (같은 브라우저에서만 유지)
-  localStorage.setItem('sessionUser', username);
-
   alert(username + '님, 로그인 성공!');
   window.location.href = '../01_review01.html';
-});
-
-signupBtn.addEventListener('click', () => {
-  window.location.href = './signup.html';
 });
